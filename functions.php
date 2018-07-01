@@ -56,6 +56,8 @@ add_filter( 'customify_the_title', 'capital_P_dangit' );
 add_filter( 'customify_the_title', 'do_shortcode' );
 add_filter( 'customify_the_title', 'convert_smilies' );
 
+add_filter( 'bp_email_use_wp_mail', '__return_true' );
+
 // Include the main Customify class.
 require_once get_template_directory().'/inc/class-customify.php';
 
